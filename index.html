@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTBD 报告中心</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 28px;
+            color: #2563eb;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .subtitle {
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .report-list {
+            list-style: none;
+        }
+        .report-item {
+            padding: 16px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            transition: all 0.2s;
+        }
+        .report-item:hover {
+            border-color: #2563eb;
+            background: #eff6ff;
+            transform: translateX(4px);
+        }
+        .report-item a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 500;
+            display: block;
+        }
+        .report-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 JTBD 报告中心</h1>
+        <p class="subtitle">产品需求分析报告库</p>
+        
+        <ul class="report-list">
+            <li class="report-item">
+                <a href="./reports/银发育儿项目.html">
+                    银发育儿项目
+                    <span class="report-badge">最新</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="footer">
+            <p>基于 JTBD v2.0 框架生成</p>
+            <p style="margin-top: 8px;">© 2026 产品能力内化系统</p>
+        </div>
+    </div>
+</body>
+</html>
