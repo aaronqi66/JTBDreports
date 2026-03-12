@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/reports/(.*)",
+      "dest": "/reports/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "public, max-age=3600"
+      }
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}
